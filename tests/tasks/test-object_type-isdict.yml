@@ -1,0 +1,10 @@
+---
+  - name: test dict (true)
+    fail:
+      msg: "variable 'object_type_dict' is not dict" 
+    when: not object_type_dict | isdict
+
+  - name: test dict (false)
+    fail: 
+      msg: "variable 'object_type_none' is dict" 
+    when: object_type_none | isdict

@@ -1,0 +1,17 @@
+---
+
+object_type_none: Null
+
+object_type_int: 1
+
+object_type_str: 'Lorem Ipsum'
+
+object_type_list:
+  - 'Lorem Ipsum'
+  - 0
+  - Null
+
+object_type_dict:
+  key1: 'Lorem Ipsum'
+  key2: 0
+  key3:  Null

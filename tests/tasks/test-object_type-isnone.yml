@@ -1,0 +1,10 @@
+---
+  - name: test none (true)
+    fail:
+      msg: "variable 'object_type_none' is not none" 
+    when: not object_type_none | isnone
+
+  - name: test none (false)
+    fail: 
+      msg: "variable 'object_type_str' is none" 
+    when: object_type_str | isnone

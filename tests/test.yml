@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+
+  roles:
+    - ../..
+
+  tasks:
+    - include: tasks/test-object_type-isdict.yml
+    - include: tasks/test-object_type-islist.yml
+    - include: tasks/test-object_type-isint.yml
+    - include: tasks/test-object_type-isstr.yml
+    - include: tasks/test-object_type-isnone.yml
+   

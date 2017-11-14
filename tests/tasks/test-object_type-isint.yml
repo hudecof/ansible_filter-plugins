@@ -1,0 +1,10 @@
+---
+  - name: test dict (true)
+    fail:
+      msg: "variable 'object_type_int' is not int" 
+    when: not object_type_int | isint
+
+  - name: test dict (false)
+    fail: 
+      msg: "variable 'object_type_none' is int" 
+    when: object_type_none | isint

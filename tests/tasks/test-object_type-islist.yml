@@ -1,0 +1,10 @@
+---
+  - name: test list (true)
+    fail:
+      msg: "variable 'object_type_list' is not list" 
+    when: not object_type_list | islist
+
+  - name: test list (false)
+    fail: 
+      msg: "variable 'object_type_none' is list" 
+    when: object_type_none | islist

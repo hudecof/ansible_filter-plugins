@@ -7,7 +7,7 @@ before_script:
   - pip install ansible
 test:
   script:
-  	- cd tests
-  	- ansible --version
-  	- ansible-playbook -i inventory test.yml --syntax-check --list-tasks -vvvv
+    - cd tests
+    - ansible --version
+    - ansible-playbook -i inventory test.yml --syntax-check --list-tasks -vvvv
     - ansible-playbook -i inventory test.yml

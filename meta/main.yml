@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: Peter Hudec
+  license: BSD
+  min_ansible_version: 1.6
+  galaxy_tags:
+    - filters
+  platforms:
+    - name: GenericLinux
+      versions:
+      - all
+      - any
+dependencies: []

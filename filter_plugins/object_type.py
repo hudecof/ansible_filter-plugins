@@ -9,19 +9,28 @@ from ansible import errors
 
 
 def islist(a):
-    return bool(isinstance(a, list))
+    return bool(isinstance(a, (list, tuple)))
 
 def isdict(a):
     return bool(isinstance(a, dict))
 
 def isint(a):
-    return bool(isinstance(a, int))
+    return bool(isinstance(a, (int, float)))
 
 def isstr(a):
-    return bool(isinstance(a, basesring))
+    return bool(isinstance(a, basestring))
 
 def isnone(a):
     return bool(a is None)
+
+def istrue(a):
+    return bool(a is True)
+
+def isfalse(a):
+    return bool(a is False)
+
+def isbool(a):
+    return isfalse(a) or istrue(a)
 
 
 class FilterModule(object):
@@ -34,6 +43,9 @@ class FilterModule(object):
             'isint': isint,
             'isstr': isstr,
             'isnone': isnone,
+            'istrue': istrue,
+            'isfalse': isfalse,
+            'isbool': isbool,
         }
 
         return filters

@@ -1,0 +1,8 @@
+---
+
+- name: config to python
+  set_fact:
+    python_cfg: "{{ config_convert | to_python }}"
+
+- debug:
+    var: python_cfg

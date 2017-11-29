@@ -2,6 +2,10 @@
 
 object_type_none: Null
 
+object_type_true: true
+
+object_type_false: false
+
 object_type_int: 1
 
 object_type_str: 'Lorem Ipsum'
@@ -15,3 +19,16 @@ object_type_dict:
   key1: 'Lorem Ipsum'
   key2: 0
   key3:  Null
+
+
+config_convert:
+  - list 1 item
+  - list 2 item as dict: value2
+    dict1: value1
+    dict2:
+      - list 1.1
+      - False
+      - Null
+      - True
+  - 4
+  - 3.4

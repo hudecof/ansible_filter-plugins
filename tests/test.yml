@@ -10,4 +10,6 @@
     - include: tasks/test-object_type-isint.yml
     - include: tasks/test-object_type-isstr.yml
     - include: tasks/test-object_type-isnone.yml
-   
+    - include: tasks/test-object_type-isbool.yml
+    - include: tasks/config-convert_ruby.yml
+

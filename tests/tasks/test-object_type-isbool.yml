@@ -1,0 +1,31 @@
+---
+  - name: test true (true)
+    fail:
+      msg: "variable 'object_type_true' is not true" 
+    when: not object_type_true | istrue
+
+  - name: test true (false)
+    fail: 
+      msg: "variable 'object_type_none' is true" 
+    when: object_type_none | istrue
+
+  - name: test false (true)
+    fail:
+      msg: "variable 'object_type_false' is not false" 
+    when: not object_type_false | isfalse
+
+  - name: test false (false)
+    fail: 
+      msg: "variable 'object_type_none' is false" 
+    when: object_type_none | isfalse
+
+  - name: test bool (true)
+    fail:
+      msg: "variable 'object_type_true' is not bool" 
+    when: not object_type_true | isbool
+
+  - name: test bool (false)
+    fail: 
+      msg: "variable 'object_type_none' is bool" 
+    when: object_type_none | isbool
+

@@ -1,0 +1,8 @@
+---
+
+- name: config to ruby
+  set_fact:
+    ruby_cfg: "{{ config_convert | to_ruby }}"
+
+- debug:
+    var: ruby_cfg

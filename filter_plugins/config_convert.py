@@ -24,11 +24,10 @@ def to_ruby(a,):
         for v in a:
             items.append(to_ruby(v))
         return "[%s]" % ','.join(items)
-
     if bool(isinstance(a, dict)):
         items = []
         for k,v in a.iteritems():
-            items.append("%s: %s" % (to_ruby(k), to_ruby(v)))
+            items.append("%s => %s" % (to_ruby(k), to_ruby(v)))
         return "{%s}" % ','.join(items)
 
     raise ValueError('unsupported type %s' % type(a))
@@ -49,7 +48,6 @@ def to_python(a):
         for v in a:
             items.append(to_python(v))
         return "[%s]" % ','.join(items)
-
     if bool(isinstance(a, dict)):
         items = []
         for k,v in a.iteritems():

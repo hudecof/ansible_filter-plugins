@@ -2,16 +2,15 @@
 
 List of filter plugings for jinja templates.
 
-# Requirements
+## Requirements
 
 None
 
-# Dependencies
+## Dependencies
 
 None
 
-Example Playbook
-----------------
+## Example Playbook
 
 
     - hosts: servers
@@ -23,20 +22,20 @@ Example Playbook
 ## Object type
 Set of plugins to determine of the object type
 
-- `isdict` if the variabla is type of **dict**
-- `islist` if the variabla is type of **list**
-- `isint` if the variabla is type of **int**
-- `isstr` if the variabla is type of **basesring**
-- `isnone` if the variabla is type of **None**
+- `isdict`: **true** if the variable is type of **dict**
+- `islist`: **true** if the variable is type of **list**
+- `isint`: **true** if the variable is type of **int**
+- `isstr`: **true** if the variable is type of **basesring**
+- `isnone`: **true** if the variable is type of **None**
 
+## Config convert
+- `to_python`: converts YAML structure to python objects
+- `to_ruby`: converts YAML structure to ruby objects
 
-License
--------
+## License
 
 BSD
 
-Author Information
-------------------
+## Author Information
 
 Peter Hudec
-CNC, a.s.
